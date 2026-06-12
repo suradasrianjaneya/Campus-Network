@@ -242,6 +242,12 @@ textarea {
   @apply resize-none;
 }
 
+/* Option element styling */
+select option {
+  background-color: var(--color-app-card-bg);
+  color: var(--color-app-text-primary);
+}
+
 /* Label Styling */
 label {
   @apply text-sm font-semibold text-slate-300 transition-colors duration-200;

@@ -19,8 +19,8 @@ const Auth = () => {
     rollNumber: '',
     department: '',
     year: '',
-    email: 'admin@college.edu',
-    password: 'password123',
+    email: '',
+    password: '',
     rememberMe: false
   });
   const [loading, setLoading] = useState(false);
@@ -199,11 +199,11 @@ const Auth = () => {
                     name="department"
                     value={formData.department}
                     onChange={handleChange}
-                    className="w-full bg-dark-900 border border-white/10 rounded-2xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500/50 transition-all text-white"
+                    className="w-full bg-dark-900 border border-white/10 rounded-2xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500/50 transition-all text-slate-800 dark:text-white"
                   >
-                    <option value="">Select...</option>
+                    <option value="" className="bg-white dark:bg-dark-900 text-slate-800 dark:text-white">Select...</option>
                     {departments.map((dept) => (
-                      <option key={dept} value={dept}>{dept}</option>
+                      <option key={dept} value={dept} className="bg-white dark:bg-dark-900 text-slate-800 dark:text-white">{dept}</option>
                     ))}
                   </select>
                 </div>
@@ -217,11 +217,11 @@ const Auth = () => {
                     name="year"
                     value={formData.year}
                     onChange={handleChange}
-                    className="w-full bg-dark-900 border border-white/10 rounded-2xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500/50 transition-all text-white"
+                    className="w-full bg-dark-900 border border-white/10 rounded-2xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500/50 transition-all text-slate-800 dark:text-white"
                   >
-                    <option value="">Select...</option>
+                    <option value="" className="bg-white dark:bg-dark-900 text-slate-800 dark:text-white">Select...</option>
                     {academicYears.map((yr) => (
-                      <option key={yr} value={yr}>{yr}</option>
+                      <option key={yr} value={yr} className="bg-white dark:bg-dark-900 text-slate-800 dark:text-white">{yr}</option>
                     ))}
                   </select>
                 </div>
@@ -240,7 +240,7 @@ const Auth = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="e.g. john@college.edu"
+              placeholder="e.g. admin.college@edu.in"
               className="w-full bg-dark-900/40 border border-white/10 rounded-2xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500/50 focus:border-transparent transition-all placeholder:text-slate-500"
             />
           </div>
@@ -256,7 +256,7 @@ const Auth = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="••••••••"
+              placeholder="Enter your password"
               className="w-full bg-dark-900/40 border border-white/10 rounded-2xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500/50 focus:border-transparent transition-all placeholder:text-slate-500"
             />
           </div>
