@@ -259,7 +259,7 @@ const Chat = () => {
               placeholder="Search conversations..."
               value={contactsSearch}
               onChange={(e) => setContactsSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 rounded-2xl text-xs border border-slate-200/40 dark:border-white/10 bg-white dark:bg-dark-900/60 focus:outline-none focus:ring-2 focus:ring-accent-500/50 placeholder:text-slate-450 text-slate-800 dark:text-white"
+              className="w-full !pl-10 pr-4 py-2.5 rounded-2xl text-xs border border-slate-200/40 dark:border-white/10 bg-white dark:bg-dark-900/60 focus:outline-none focus:ring-2 focus:ring-accent-500/50 placeholder:text-slate-450 text-slate-800 dark:text-white"
             />
           </div>
         </div>

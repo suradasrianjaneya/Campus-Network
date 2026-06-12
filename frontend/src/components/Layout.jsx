@@ -257,7 +257,7 @@ const Layout = ({ children }) => {
                 value={globalSearch}
                 onChange={(e) => setGlobalSearch(e.target.value)}
                 placeholder="Search lost items, marketplace, posts..."
-                className="w-full pl-10 pr-4 py-2 text-xs rounded-2xl border border-slate-200/40 dark:border-white/5 bg-slate-100/50 dark:bg-dark-900/30 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
+                className="w-full !pl-10 pr-4 py-2 text-xs rounded-2xl border border-slate-200/40 dark:border-white/5 bg-slate-100/50 dark:bg-dark-900/30 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
               />
             </form>
           </div>
