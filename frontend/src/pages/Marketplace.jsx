@@ -289,7 +289,7 @@ const Marketplace = () => {
         </div>
 
         {/* Search & Price fields filters */}
-        <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row gap-3 w-full xl:w-auto flex-1 justify-end max-w-4xl">
+        <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row sm:flex-wrap gap-3 w-full xl:w-auto flex-1 justify-end max-w-4xl">
           <select
             value={filterCondition}
             onChange={(e) => setFilterCondition(e.target.value)}

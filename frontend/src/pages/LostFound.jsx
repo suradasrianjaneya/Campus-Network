@@ -286,7 +286,7 @@ const LostFound = () => {
         </div>
 
         {/* Dynamic Filters Form */}
-        <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row gap-3 w-full md:w-auto flex-1 max-w-2xl justify-end">
+        <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row sm:flex-wrap gap-3 w-full md:w-auto flex-1 max-w-2xl justify-end">
           <select
             value={filterCategory}
             onChange={(e) => setFilterCategory(e.target.value)}
